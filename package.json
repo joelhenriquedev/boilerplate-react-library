@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/joelhenrique2000/boilerplate-react-library/issues"
   },
-  "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme"
+  "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
+  "dependencies": {
+    "rollup": "^1.6.0"
+  }
 }
