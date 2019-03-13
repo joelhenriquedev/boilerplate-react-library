@@ -1,0 +1,19 @@
+{
+  "name": "boilerplate-react-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelhenrique2000/boilerplate-react-library.git"
+  },
+  "author": "Joel Henrique Silva Santos <joelhenrique2000@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelhenrique2000/boilerplate-react-library/issues"
+  },
+  "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme"
+}
