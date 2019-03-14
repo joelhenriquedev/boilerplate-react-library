@@ -7,19 +7,3 @@
     "@babel/plugin-proposal-class-properties"
   ]
 }
-
-
-/*{
-  "presets": [
-    ["@babel/env", {
-      "modules": false
-    }],
-    "@babel/preset-stage-0",
-    "@babel/preset-react"
-  ],
-  "plugins": [
-    "@babel/plugin-external-helpers"
-  ]
-
-}
-*/
