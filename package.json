@@ -15,8 +15,16 @@
   "bugs": {
     "url": "https://github.com/joelhenrique2000/boilerplate-react-library/issues"
   },
+  "peerDependencies": {
+    "props-types": "^15.5.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {
     "rollup": "^1.6.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-peer-deps-external": "^2.2.0"
   }
 }
