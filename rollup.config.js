@@ -1,4 +1,5 @@
 import external from 'rollup-plugin-peer-deps-external'
+import commonjs from 'rollup-plugin-commonjs'
 
 export default {
 	input: 'src/main.js',
@@ -7,6 +8,7 @@ export default {
 		format: 'cjs'
 	},
 	plugins: [
-		external()
+		external(),
+		commonjs()
 	]
 };
