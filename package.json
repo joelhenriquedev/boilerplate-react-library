@@ -27,13 +27,12 @@
     "react-dom": "^16.0.0"
   },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
-  "dependencies": {
-    "rollup": "^1.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^2.1.8",
+    "rollup": "^1.6.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-node-resolve": "^4.0.1",
