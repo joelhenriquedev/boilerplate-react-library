@@ -2,7 +2,8 @@ import external from 'rollup-plugin-peer-deps-external'
 import commonjs from 'rollup-plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
 import url from "rollup-plugin-url"
-
+import resolve from 'rollup-plugin-node-resolve'
+import babel from 'rollup-plugin-babel'
 
 export default {
 	input: 'src/main.js',
@@ -16,6 +17,11 @@ export default {
 		postcss({
 			modules: true
 		}),
-		url()
+		url(),
+		resolve(),
+		babel({
+			exclude: 'node_modules/**',
+			plugins: [ 'external-helpers' ]
+		})
 	]
 };
