@@ -29,6 +29,7 @@
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {},
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^2.1.8",
