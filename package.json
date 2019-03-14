@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-react-library",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate created with Rollup for publishing React modules",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/joelhenrique2000/boilerplate-react-library.git"
   },
-  "author": "Joel Henrique Silva Santos <joelhenrique2000@gmail.com>",
+  "author": "Joel Henrique Silva Santos",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/joelhenrique2000/boilerplate-react-library/issues"
@@ -29,7 +29,18 @@
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/helpers": "^7.3.1",
+    "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-0": "^7.0.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^2.1.8",
@@ -39,6 +50,8 @@
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-size-snapshot": "^0.8.0",
+    "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-url": "^2.2.0"
   }
 }
