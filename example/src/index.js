@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
-import App from './App';
+import ExampleComponent from '../../dist/index';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ExampleComponent />, document.getElementById('root'));
