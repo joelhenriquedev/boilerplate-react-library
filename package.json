@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {
-    "babel-loader": "^8.0.6",
-    "concurrently": "^5.0.2"
+    "babel-loader": "^8.0.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -39,6 +38,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
     "babel-plugin-external-helpers": "^6.22.0",
+    "concurrently": "^5.0.2",
     "cross-env": "^5.2.0",
     "eslint": "^5.15.1",
     "gh-pages": "^2.0.1",
@@ -54,6 +54,7 @@
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-scss": "^2.1.0",
     "rollup-plugin-size-snapshot": "^0.8.0",
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-url": "^2.2.0",
