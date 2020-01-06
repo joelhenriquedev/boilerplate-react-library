@@ -14,6 +14,7 @@
 - Supports complicated peer-dependencies
 -  [Babel](https://babeljs.io/) for transpilation
 - Supports CSS modules
+- Support SASS
 - [Rollup](https://rollupjs.org/) for build proces
 - Bundles `cjs` and `es` module formats
 

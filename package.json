@@ -6,8 +6,9 @@
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "server": "webpack && webpack-dev-server"
+    "build-watch": "rollup -c -w",
+    "server": "webpack && webpack-dev-server",
+    "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
   },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
