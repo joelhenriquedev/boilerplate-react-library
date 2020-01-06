@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-react-library",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Boilerplate created with Rollup for publishing React modules",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
