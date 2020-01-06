@@ -1,10 +1,11 @@
 {
   "name": "boilerplate-react-library",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Boilerplate created with Rollup for publishing React modules",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
+    "storybook": "start-storybook",
     "build": "rollup -c",
     "build-watch": "rollup -c -w",
     "server": "webpack && webpack-dev-server",
@@ -26,7 +27,9 @@
   },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -37,6 +40,8 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.0.2",
+    "@storybook/react": "^5.2.8",
     "babel-plugin-external-helpers": "^6.22.0",
     "concurrently": "^5.0.2",
     "cross-env": "^5.2.0",
