@@ -15,13 +15,14 @@ export default class ExampleComponent extends Component {
 
   render() {
     const {
-      text
+      text,
+      photo
     } = this.props
 
     return (
       <div className="card">
         <header className="card__header">
-          <img src="https://images.unsplash.com/photo-1565843248736-8c41e6db117b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+          <img src={photo} />
         </header>
         <main className="card__description">
           {text}
