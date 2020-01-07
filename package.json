@@ -1,10 +1,11 @@
 {
   "name": "boilerplate-react-library",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Boilerplate created with Rollup for publishing React modules",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
+    "test": "jest",
     "storybook": "start-storybook",
     "build": "rollup -c",
     "build-watch": "rollup -c -w",
@@ -27,7 +28,10 @@
   },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0",
     "tslib": "^1.10.0",
     "typescript": "^3.7.4"
   },
@@ -37,8 +41,8 @@
     "@babel/helpers": "^7.3.1",
     "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
     "@babel/preset-stage-0": "^7.0.0",
     "@rollup/plugin-typescript": "^2.0.2",
     "@storybook/react": "^5.2.8",

@@ -1,7 +1,3 @@
-/**
- * @class ExampleComponent
- */
-
 import React from 'react'
 
 import style from './styles.css'

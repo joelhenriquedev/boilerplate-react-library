@@ -7,7 +7,7 @@
 ## Features
 
  - [x] Transpiles all modern JS features
- - [ ] [Jest](https://facebook.github.io/jest/) for testing
+ - [x] [Jest](https://facebook.github.io/jest/) for testing
  - [x] [Babel](https://babeljs.io/) for transpilation
  - [x] Support SASS
  - [x] [Rollup](https://rollupjs.org/) for build proces
@@ -30,9 +30,6 @@
 The test setup is based on Jest. Code coverage report is generated to  `coverage/`. The coverage information is also uploaded to codecov.io after a successful Travis build.
 
 -   Running tests once -  **npm test**
--   Running tests continuously -  **npm run test:watch**
--   Running individual tests -  **npm test --** - Works with  `test:watch`  too.
--   Linting -  **npm run test:lint**  - Runs ESLint.
 
 ### StoryBook documentation
 

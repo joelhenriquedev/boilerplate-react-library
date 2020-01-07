@@ -6,7 +6,6 @@ import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
 import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import { terser } from 'rollup-plugin-terser'
-import serve from 'rollup-plugin-serve'
 import typescript from '@rollup/plugin-typescript';
 
 import pkg from './package.json'
