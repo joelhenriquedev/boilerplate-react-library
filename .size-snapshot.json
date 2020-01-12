@@ -17,5 +17,15 @@
         "code": 2274
       }
     }
+  },
+  "ola/aaaa.js": {
+    "bundled": 2244,
+    "minified": 1836,
+    "gzipped": 823
+  },
+  "ola/index.js": {
+    "bundled": 2420,
+    "minified": 2206,
+    "gzipped": 1023
   }
 }

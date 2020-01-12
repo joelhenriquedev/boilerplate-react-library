@@ -1,8 +1,7 @@
-
- import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ExampleComponent from 'boilerplate-react-library';
+import ExampleComponent from '../../dist/index.es';
 
 import photo from './photo.jpg'
 

@@ -7,39 +7,48 @@ import url from 'rollup-plugin-url'
 import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import { terser } from 'rollup-plugin-terser'
 import typescript from '@rollup/plugin-typescript';
-
+import serve from 'rollup-plugin-serve'
 import pkg from './package.json'
 
-export default {
-  input: 'src/index.js',
-  external: ['react', 'react-dom', 'prop-types'],
-  output: [ 
-    {
-      file: pkg.main,
-      format: 'cjs',
-      sourcemap: true
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: true
-    },
-  ],
-  plugins: [
-    external(),
-    postcss({
-      modules: false
-    }),
-    url(),
-    babel({
-      exclude: 'node_modules/**'
-    }),
-    resolve(),
-    commonjs({
-      exclude: 'node_modules/**'
-    }),
-    sizeSnapshot(),
-    terser(),
-    typescript()
-  ],
-};
+export default [{
+    input: 'src/index.js',
+    external: ['react', 'react-dom', 'prop-types'],
+    output: [ 
+      {
+        file: pkg.main,
+        format: 'cjs',
+        sourcemap: true
+      },
+      {
+        file: pkg.module,
+        format: 'es',
+        sourcemap: true
+      },
+    ],
+    plugins: [
+      external(),
+      postcss({
+        modules: false
+      }),
+      url(),
+      babel({
+        exclude: 'node_modules/**'
+      }),
+      resolve(),
+      commonjs({
+        exclude: 'node_modules/**'
+      }),
+      sizeSnapshot(),
+      terser(),
+      typescript(),
+        /*
+        serve({
+        contentBase: 'example/dist',
+        host: 'localhost',
+        open: true,
+        port: 1020
+      })
+        */
+    ],
+  }
+]
