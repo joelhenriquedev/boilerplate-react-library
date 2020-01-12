@@ -7,48 +7,60 @@ import url from 'rollup-plugin-url'
 import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import { terser } from 'rollup-plugin-terser'
 import typescript from '@rollup/plugin-typescript';
-import serve from 'rollup-plugin-serve'
 import pkg from './package.json'
+import cleanup from 'rollup-plugin-cleanup';
+import { uglify } from "rollup-plugin-uglify";
+
+const input = "src/index.js";
+
+const commonjsOptions = {
+  ignoreGlobal: true,
+  include: /node_modules/,
+  namedExports: {
+    "../../node_modules/prop-types/index.js": [
+      "elementType",
+      "bool",
+      "func",
+      "object",
+      "oneOfType",
+      "element"
+    ]
+  },
+  exclude: 'node_modules/**'
+}
+
+const plugins = [
+  external(),
+  postcss({
+    modules: false
+  }),
+  url(),
+  cleanup(),
+  babel({
+    exclude: 'node_modules/**'
+  }),
+  resolve(),
+  commonjs(commonjsOptions),
+  sizeSnapshot(),
+  terser(),
+  typescript(),
+  uglify(),
+]
 
 export default [{
-    input: 'src/index.js',
-    external: ['react', 'react-dom', 'prop-types'],
-    output: [ 
-      {
-        file: pkg.main,
-        format: 'cjs',
-        sourcemap: true
-      },
-      {
-        file: pkg.module,
-        format: 'es',
-        sourcemap: true
-      },
-    ],
-    plugins: [
-      external(),
-      postcss({
-        modules: false
-      }),
-      url(),
-      babel({
-        exclude: 'node_modules/**'
-      }),
-      resolve(),
-      commonjs({
-        exclude: 'node_modules/**'
-      }),
-      sizeSnapshot(),
-      terser(),
-      typescript(),
-        /*
-        serve({
-        contentBase: 'example/dist',
-        host: 'localhost',
-        open: true,
-        port: 1020
-      })
-        */
-    ],
-  }
-]
+  input,
+  external: ['react', 'react-dom', 'prop-types'],
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs',
+      sourcemap: true
+    },
+    {
+      file: pkg.module,
+      format: 'es',
+      sourcemap: true
+    },
+  ],
+  plugins
+}]

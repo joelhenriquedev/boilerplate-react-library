@@ -1,11 +1,11 @@
 {
   "dist/index.js": {
-    "bundled": 2244,
+    "bundled": 2240,
     "minified": 1836,
     "gzipped": 823
   },
   "dist/index.es.js": {
-    "bundled": 2091,
+    "bundled": 2087,
     "minified": 1720,
     "gzipped": 778,
     "treeshaked": {
