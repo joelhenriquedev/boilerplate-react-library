@@ -4,12 +4,11 @@ import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
-import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import { terser } from 'rollup-plugin-terser'
 import typescript from '@rollup/plugin-typescript';
 import pkg from './package.json'
 import cleanup from 'rollup-plugin-cleanup';
-import { uglify } from "rollup-plugin-uglify";
+import { DEFAULT_EXTENSIONS } from '@babel/core';
 
 const input = "src/index.js";
 
@@ -37,30 +36,41 @@ const plugins = [
   url(),
   cleanup(),
   babel({
-    exclude: 'node_modules/**'
+    exclude: 'node_modules/**',
+    extensions: [
+      ...DEFAULT_EXTENSIONS,
+      '.ts',
+      '.tsx'
+  ]
   }),
   resolve(),
   commonjs(commonjsOptions),
-  sizeSnapshot(),
   terser(),
   typescript(),
-  uglify(),
+]
+
+const output = [
+  {
+    file: pkg.main,
+    format: 'cjs',
+    sourcemap: true
+  },
+  {
+    file: pkg.module,
+    format: 'es',
+    sourcemap: true
+  },
 ]
 
 export default [{
   input,
-  external: ['react', 'react-dom', 'prop-types'],
-  output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-      sourcemap: true
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: true
-    },
+  external: [
+    'react',
+    'react-dom',
+    'prop-types',
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.peerDependencies || {}),
   ],
+  output,
   plugins
 }]
