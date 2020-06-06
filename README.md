@@ -1,6 +1,6 @@
 # boilerplate-react-library
 [![Build Status](https://travis-ci.org/joelhenrique2000/boilerplate-react-library.svg?branch=master)](https://travis-ci.org/joelhenrique2000/boilerplate-react-library)
-
+![](https://david-dm.org/joelhenrique2000/boilerplate-react-library.svg)
 ## Intro
 **Create react components quickly with the boilerplate, zero configuration..**
 *Note*: Every 2 month the project is actualized for latest versions
@@ -12,6 +12,7 @@
  - [x] [Babel](https://babeljs.io/) for transpilation
  - [x] Support SASS
  - [x] Support Travis CI
+ - [x] Support Codecov
  - [x] [Rollup](https://rollupjs.org/) for build proces
  - [x] Bundles `cjs` and `es` module formats
  - [x] Support [Typescript]([https://www.typescriptlang.org/](https://www.typescriptlang.org/))

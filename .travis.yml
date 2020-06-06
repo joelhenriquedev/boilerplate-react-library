@@ -4,5 +4,8 @@ node_js:
 script:
   - npm test
   - npm run build
+  - npm install codecov -g
+  after_success:
+  - codecov
 on:
   branch: master
