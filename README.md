@@ -1,5 +1,5 @@
 # boilerplate-react-library
- 
+
 ## Intro
 **Create react components quickly with the boilerplate, zero configuration..**
 *Note*: Every 2 month the project is actualized for latest versions
@@ -10,11 +10,12 @@
  - [x] [Jest](https://facebook.github.io/jest/) for testing
  - [x] [Babel](https://babeljs.io/) for transpilation
  - [x] Support SASS
+ - [x] Support Travis CI
  - [x] [Rollup](https://rollupjs.org/) for build proces
  - [x] Bundles `cjs` and `es` module formats
- - [ ] Support [Typescript]([https://www.typescriptlang.org/](https://www.typescriptlang.org/))
+ - [x] Support [Typescript]([https://www.typescriptlang.org/](https://www.typescriptlang.org/))
  - [x] Server local for development
- - [x] Support StoryBook 
+ - [x] Support StoryBook
 
 ## Basic Usage
 
