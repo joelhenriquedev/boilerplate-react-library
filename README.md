@@ -1,4 +1,5 @@
 # boilerplate-react-library
+[![Build Status](https://travis-ci.org/joelhenrique2000/boilerplate-react-library.svg?branch=master)](https://travis-ci.org/joelhenrique2000/boilerplate-react-library)
 
 ## Intro
 **Create react components quickly with the boilerplate, zero configuration..**
