@@ -12,7 +12,6 @@
  - [x] [Babel](https://babeljs.io/) for transpilation
  - [x] Support SASS
  - [x] Support Travis CI
- - [x] Support Codecov
  - [x] [Rollup](https://rollupjs.org/) for build proces
  - [x] Bundles `cjs` and `es` module formats
  - [x] Support [Typescript]([https://www.typescriptlang.org/](https://www.typescriptlang.org/))
