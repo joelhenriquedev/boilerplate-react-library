@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Matches the snapshot 1`] = `
+<div
+  className="card"
+>
+  <header
+    className="card__header"
+  >
+    <img
+      src="photo.jpg"
+    />
+  </header>
+  <main
+    className="card__description"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel odio libero. Nulla arcu enim, ultrices at nibh sed, iaculis efficitur urna. Donec et felis a nunc porta cursus. Duis accumsan nunc diam, sed suscipit libero sodales ut.
+  </main>
+  <footer
+    className="card__action"
+  >
+    <button
+      onClick={[Function]}
+    >
+      read
+    </button>
+  </footer>
+</div>
+`;
