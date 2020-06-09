@@ -16,6 +16,7 @@ Everything you need to build React components</div>
     <a href="#travis">
     <img src="https://david-dm.org/joelhenrique2000/boilerplate-react-library.svg" alt="travis" />
   </a>
+</div>
 
 <br />
 
