@@ -1,5 +1,5 @@
 
-<img src="https://raw.githubusercontent.com/joelhenrique2000/boilerplate-react-library/master/assets/banner.jpg" alt="react boilerplate banner" align="center" />
+<img src="https://raw.githubusercontent.com/joelhenrique2000/boilerplate-react-library/master/src/assets/banner.jpg" alt="react boilerplate banner" align="center" />
 
 <br />
 
