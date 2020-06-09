@@ -10,9 +10,7 @@
     "test:watchAll": "jest --watchAll --colors --passWithNoTests",
     "storybook": "start-storybook",
     "build": "rollup -c",
-    "build:watch": "rollup -c -w",
-    "server": "webpack && webpack-dev-server",
-    "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run server\""
+    "build:watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -31,20 +29,19 @@
   },
   "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
   "dependencies": {
-    "babel-jest": "^24.9.0",
-    "babel-loader": "^8.0.6",
+    "babel-jest": "^26.0.1",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.8.3",
-    "@babel/helpers": "^7.3.1",
-    "@babel/plugin-external-helpers": "^7.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "@babel/preset-stage-0": "^7.0.0",
-    "@babel/preset-typescript": "^7.8.0",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/helpers": "^7.10.1",
+    "@babel/plugin-external-helpers": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@babel/preset-typescript": "^7.10.1",
     "@rollup/plugin-babel": "^5.0.3",
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.0.1",
