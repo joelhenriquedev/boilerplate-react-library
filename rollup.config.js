@@ -15,16 +15,6 @@ const input = "src/index.js";
 const commonjsOptions = {
   ignoreGlobal: true,
   include: /node_modules/,
-  namedExports: {
-    "../../node_modules/prop-types/index.js": [
-      "elementType",
-      "bool",
-      "func",
-      "object",
-      "oneOfType",
-      "element"
-    ]
-  },
   exclude: 'node_modules/**'
 }
 
@@ -37,11 +27,12 @@ const plugins = [
   cleanup(),
   babel({
     exclude: 'node_modules/**',
+    babelHelpers: 'bundled',
     extensions: [
       ...DEFAULT_EXTENSIONS,
       '.ts',
       '.tsx'
-  ]
+    ]
   }),
   resolve(),
   commonjs(commonjsOptions),
